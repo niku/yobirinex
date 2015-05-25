@@ -14,7 +14,7 @@ defmodule Webhoox.Mixfile do
   #
   # Type `mix help compile.app` for more information
   def application do
-    [applications: [:logger]]
+    [applications: [:logger, :cowboy, :plug]]
   end
 
   # Dependencies can be Hex packages:
@@ -27,6 +27,8 @@ defmodule Webhoox.Mixfile do
   #
   # Type `mix help deps` for more examples and options
   defp deps do
-    []
+    [{:cowboy, "~> 1.0.0"},
+     {:plug, "~> 0.12"},
+     {:poison, "~> 1.4"}]
   end
 end
