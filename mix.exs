@@ -7,8 +7,7 @@ defmodule Webhoox.Mixfile do
      elixir: "~> 1.0",
      build_embedded: Mix.env == :prod,
      start_permanent: Mix.env == :prod,
-     deps: deps,
-     escript: escript]
+     deps: deps]
   end
 
   # Configuration for the OTP application
@@ -33,9 +32,5 @@ defmodule Webhoox.Mixfile do
      {:plug, "~> 0.12"},
      {:poison, "~> 1.4"},
      {:logger_file_backend, "~> 0.0.3"}]
-  end
-
-  defp escript do
-    [main_module: Webhoox.CLI]
   end
 end
