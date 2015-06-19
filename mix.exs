@@ -1,8 +1,8 @@
-defmodule Webhoox.Mixfile do
+defmodule Yobirinex.Mixfile do
   use Mix.Project
 
   def project do
-    [app: :webhoox,
+    [app: :yobirinex,
      version: "0.0.1",
      elixir: "~> 1.0",
      build_embedded: Mix.env == :prod,
@@ -16,7 +16,7 @@ defmodule Webhoox.Mixfile do
   def application do
     [applications: [:logger, :cowboy, :plug],
      included_applications: [:poison, :logger_file_backend],
-     mod: {Webhoox, []}]
+     mod: {Yobirinex, []}]
   end
 
   # Dependencies can be Hex packages:

@@ -1,4 +1,4 @@
-defmodule Webhoox.Handler do
+defmodule Yobirinex.Handler do
   require Logger
   import Plug.Conn
 

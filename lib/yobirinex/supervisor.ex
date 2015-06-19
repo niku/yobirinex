@@ -1,4 +1,4 @@
-defmodule Webhoox.Supervisor do
+defmodule Yobirinex.Supervisor do
   use Supervisor
 
   def start_link(opts) do
@@ -7,7 +7,7 @@ defmodule Webhoox.Supervisor do
 
   def init(_opts) do
     children = [
-      Plug.Adapters.Cowboy.child_spec(:http, Webhoox.Handler, [configdir: "~/configdir"], [])
+      Plug.Adapters.Cowboy.child_spec(:http, Yobirinex.Handler, [configdir: "~/configdir"], [])
     ]
     supervise(children, strategy: :one_for_one)
   end

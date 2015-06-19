@@ -1,4 +1,4 @@
-defmodule WebhooxTest do
+defmodule YobirinexTest do
   use ExUnit.Case
 
   test "the truth" do
