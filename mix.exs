@@ -30,9 +30,9 @@ defmodule Yobirinex.Mixfile do
   # Type `mix help deps` for more examples and options
   defp deps do
     [{:cowboy, "~> 1.0.0"},
-     {:plug, "~> 0.12"},
+     {:plug, "~> 0.13"},
      {:poison, "~> 1.4"},
      {:logger_file_backend, "~> 0.0.3"},
-     {:exrm, "~> 0.15.3"}]
+     {:exrm, "~> 0.17.1"}]
   end
 end

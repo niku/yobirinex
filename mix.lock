@@ -1,8 +1,13 @@
-%{"conform": {:hex, :conform, "0.13.0"},
+%{"bbmustache": {:hex, :bbmustache, "1.0.1"},
+  "conform": {:hex, :conform, "0.14.4"},
   "cowboy": {:hex, :cowboy, "1.0.0"},
   "cowlib": {:hex, :cowlib, "1.0.1"},
-  "exrm": {:hex, :exrm, "0.15.3"},
+  "erlware_commons": {:hex, :erlware_commons, "0.13.0"},
+  "exrm": {:hex, :exrm, "0.17.1"},
+  "getopt": {:hex, :getopt, "0.8.2"},
   "logger_file_backend": {:hex, :logger_file_backend, "0.0.3"},
-  "plug": {:hex, :plug, "0.12.2"},
+  "plug": {:hex, :plug, "0.13.0"},
   "poison": {:hex, :poison, "1.4.0"},
-  "ranch": {:hex, :ranch, "1.0.0"}}
+  "providers": {:hex, :providers, "1.4.1"},
+  "ranch": {:hex, :ranch, "1.0.0"},
+  "relx": {:hex, :relx, "2.1.1"}}
