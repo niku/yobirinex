@@ -33,6 +33,6 @@ defmodule Yobirinex.Mixfile do
      {:plug, "~> 0.13"},
      {:poison, "~> 1.4"},
      {:logger_file_backend, "~> 0.0.3"},
-     {:exrm, "~> 0.17.1"}]
+     {:exrm, "~> 0.16.0"}]
   end
 end
