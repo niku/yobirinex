@@ -5,9 +5,11 @@ defmodule Yobirinex.Mixfile do
     [app: :yobirinex,
      version: "0.0.1",
      elixir: "~> 1.2",
+     description: "A generic webhook endpoint that runs scripts (like the captainhook)",
      build_embedded: Mix.env == :prod,
      start_permanent: Mix.env == :prod,
-     deps: deps]
+     deps: deps,
+     package: package]
   end
 
   # Configuration for the OTP application
@@ -35,5 +37,17 @@ defmodule Yobirinex.Mixfile do
      {:logger_file_backend, "~> 0.0.6"},
      {:exrm, "~> 1.0"},
      {:exrm_deb, "~> 0.0.4"}]
+  end
+
+  defp package do
+    [external_dependencies: [],
+     license_file: "LICENSE",
+     maintainers: ["niku <niku@niku.name>"],
+     vendor: "niku",
+     licenses: ["MIT"],
+     links: %{
+       "GitHub" => "https://github.com/niku/yobirinex",
+       "Homepage" => "https://github.com/niku/yobirinex"
+     }]
   end
 end
