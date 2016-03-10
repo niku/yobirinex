@@ -14,7 +14,7 @@ defmodule Yobirinex.Mixfile do
   #
   # Type "mix help compile.app" for more information
   def application do
-    [applications: [:logger, :cowboy, :plug],
+    [applications: [:logger, :cowboy, :plug, :exrm_deb],
      included_applications: [:poison, :logger_file_backend],
      mod: {Yobirinex, []}]
   end
@@ -33,6 +33,7 @@ defmodule Yobirinex.Mixfile do
      {:plug, "~> 1.1"},
      {:poison, "~> 2.1"},
      {:logger_file_backend, "~> 0.0.6"},
-     {:exrm, "~> 1.0"}]
+     {:exrm, "~> 1.0"},
+     {:exrm_deb, "~> 0.0.4"}]
   end
 end
