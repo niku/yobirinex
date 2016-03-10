@@ -33,3 +33,5 @@ config :logger, backends: [{LoggerFileBackend, :file}]
 config :logger, :file,
   path: "log/access.log",
   level: :debug
+
+config :yobirinex, configdir: "~/configdir"

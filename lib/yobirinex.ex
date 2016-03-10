@@ -9,7 +9,10 @@ defmodule Yobirinex do
     children = [
       # Define workers and child supervisors to be supervised
       # worker(Yobirinex.Worker, [arg1, arg2, arg3]),
-      Plug.Adapters.Cowboy.child_spec(:http, Yobirinex.Handler, [configdir: "~/configdir"], [])
+      Plug.Adapters.Cowboy.child_spec(:http,
+                                      Yobirinex.Handler,
+                                      [configdir: Application.fetch_env!(:yobirinex, :configdir)],
+                                      [])
     ]
 
     # See http://elixir-lang.org/docs/stable/elixir/Supervisor.html
